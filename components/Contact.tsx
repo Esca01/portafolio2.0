@@ -25,21 +25,21 @@ export default function Contact({}: Props) {
         <div className='flex flex-col space-y-10'>
             <h4 className='text-4xl font-semibold text-center'>
                 ¿Soy lo que estabas buscando?.{" "} 
-                <span className='decoration-[#F7AB0A]/50 underline'>Contactame</span>
+                <span className='decoration-[#61ff45]/50 underline'>Contactame</span>
             </h4>
         <div className='space-y-10'>
             <div className='flex items-center space-x-5 justify-center'>
-                <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+                <PhoneIcon className='text-[#61ff45] h-7 w-7 animate-pulse'/>
                 <p className='text-2xl'>+57 316-825-5901</p>
             </div>
 
             <div className='flex items-center space-x-5 justify-center'>
-                <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+                <EnvelopeIcon className='text-[#61ff45] h-7 w-7 animate-pulse'/>
                 <p className='text-2xl'>esteban.escalante@utp.edu.co</p>
             </div>
 
             <div className='flex items-center space-x-5 justify-center'>
-                <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+                <MapPinIcon className='text-[#61ff45] h-7 w-7 animate-pulse'/>
                 <p className='text-2xl'>Pereira, Risaralda, Co</p>
             </div>
         </div>
@@ -67,7 +67,7 @@ export default function Contact({}: Props) {
               className='contactInput'/>
             <button 
               type='submit'
-              className='bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg'>Enviar</button>
+              className='bg-[#61ff45] py-5 px-10 rounded-md text-black font-bold text-lg'>Enviar</button>
         </form>
         </div>
     </div>
