@@ -33,9 +33,9 @@ export default function About({}: Props) {
           <h4 className='text-4xl font-semibold'>
             Un <span className='underline dcoration-[#F7AB0A]/50'>poco</span> acerca de mi
           </h4>
-          <p className='text-base'>
+          <div className='text-base'>
           Soy un estudiante el cual esta dispuesto a crear su propia experiencia laboral para así poder salir adelante en este mundo que actualmente se encuentra en una etapa difícil. siendo comprometido, honesto y colaborador espero poder cumplir y satisfacer cualquier demanda y/o problema que se me presente en mi campo laboral.
-          </p>
+          </div>
 
         </div>
     </motion.div>
