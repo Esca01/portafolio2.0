@@ -26,11 +26,11 @@ type Props = {
   socials: Social[];
 }
 
-export default function Home({pageInfo,experiences,skills,socials,projects}: Props) {
+const Home = ({pageInfo, experiences, skills, socials, projects}: Props) => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#61ff45]/80'>
       <Head>
-        <title>Portafolio de Esteban</title>
+        <title>{pageInfo?.name} - Portafolio</title>
       </Head>
 
       <Header socials={socials}/>
@@ -58,7 +58,7 @@ export default function Home({pageInfo,experiences,skills,socials,projects}: Pro
 
       {/* Contact Me */}
       <section id='contact' className='snap-start'>
-        <Contact />
+        <Contact pageInfo = {pageInfo}/>
       </section>
 
       <Link href="#hero">
@@ -70,8 +70,10 @@ export default function Home({pageInfo,experiences,skills,socials,projects}: Pro
       </Link>
 
     </div>
-  )
-}
+  );
+};
+
+export default Home;
 
 export const getStaticProps: GetStaticProps<Props> = async() => {
   const pageInfo: PageInfo = await fetchPageInfo();
