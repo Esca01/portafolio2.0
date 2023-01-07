@@ -30,17 +30,17 @@ export default function Contact({}: Props) {
         <div className='space-y-10'>
             <div className='flex items-center space-x-5 justify-center'>
                 <PhoneIcon className='text-[#61ff45] h-7 w-7 animate-pulse'/>
-                <p className='text-2xl'>+57 316-825-5901</p>
+                <div className='text-2xl'>+57 316-825-5901</div>
             </div>
 
             <div className='flex items-center space-x-5 justify-center'>
                 <EnvelopeIcon className='text-[#61ff45] h-7 w-7 animate-pulse'/>
-                <p className='text-2xl'>esteban.escalante@utp.edu.co</p>
+                <div className='text-2xl'>esteban.escalante@utp.edu.co</div>
             </div>
 
             <div className='flex items-center space-x-5 justify-center'>
                 <MapPinIcon className='text-[#61ff45] h-7 w-7 animate-pulse'/>
-                <p className='text-2xl'>Pereira, Risaralda, Co</p>
+                <div className='text-2xl'>Pereira, Risaralda, Co</div>
             </div>
         </div>
 

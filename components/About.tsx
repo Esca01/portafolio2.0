@@ -1,10 +1,14 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import { PageInfo } from '../typings';
+import { urlFor } from '../sanity';
 
 
-type Props = {}
+type Props = {
+  pageInfo: PageInfo
+}
 
-export default function About({}: Props) {
+export default function About({pageInfo}: Props) {
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -25,7 +29,7 @@ export default function About({}: Props) {
           }}
           whileInView={{ opacity: 1, x:0 }}
           viewport={{ once:true }}        
-        src="./img/About2.jpg"
+        src={urlFor(pageInfo?.profilePic).url()}
         className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]' 
         />
 
@@ -34,7 +38,7 @@ export default function About({}: Props) {
             Un <span className='underline dcoration-[#F7AB0A]/50'>poco</span> acerca de mi
           </h4>
           <div className='text-base'>
-          Soy un estudiante el cual esta dispuesto a crear su propia experiencia laboral para así poder salir adelante en este mundo que actualmente se encuentra en una etapa difícil. siendo comprometido, honesto y colaborador espero poder cumplir y satisfacer cualquier demanda y/o problema que se me presente en mi campo laboral.
+          {pageInfo?.backgroundInformation}
           </div>
 
         </div>
